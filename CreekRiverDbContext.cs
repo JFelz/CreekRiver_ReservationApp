@@ -13,9 +13,7 @@ public class CreekRiverDbContext : DbContext
 
     public CreekRiverDbContext(DbContextOptions<CreekRiverDbContext> context) : base(context)
     {
-
     }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // seed data with campsite types
