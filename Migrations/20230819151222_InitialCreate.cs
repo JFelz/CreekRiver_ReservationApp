@@ -101,15 +101,6 @@ namespace CreekRiver.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Campsites",
-                columns: new[] { "Id", "CampsiteTypeId", "ImageUrl", "Nickname" },
-                values: new object[,]
-                {
-                    { 5, 5, "https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_242371765-1-1.jpg", "Chillwind" },
-                    { 6, 6, "http://unique-weird.weebly.com/uploads/9/3/9/5/9395176/521308189.jpg", "HangingLights" }
-                });
-
-            migrationBuilder.InsertData(
                 table: "UserProfiles",
                 columns: new[] { "Id", "Email", "FirstName", "LastName" },
                 values: new object[] { 1, "MLorenzo@gmail.com", "Marco", "Lorenzo" });

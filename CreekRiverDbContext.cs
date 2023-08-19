@@ -31,13 +31,11 @@ public class CreekRiverDbContext : DbContext
         new Campsite {Id = 2, CampsiteTypeId = 2, Nickname = "Clearview", ImageUrl="https://cdn.mchn.io/12/image/Camping.jpg"},
         new Campsite {Id = 3, CampsiteTypeId = 3, Nickname = "MudFoot", ImageUrl="https://assets.bedful.com/images/a688734b76b7738bda83d4684fac0482976ae6dd/large/the-best-riverside-campsites-in-scotland/the-best-riverside-campsites-in-scotland.jpg"},
         new Campsite {Id = 4, CampsiteTypeId = 4, Nickname = "Solitary", ImageUrl="https://media.blogto.com/articles/2017725-lake-superior.jpg?cmd=resize_then_crop&quality=70&w=2048&height=1365"},
-        new Campsite {Id = 5, CampsiteTypeId = 5, Nickname = "Chillwind", ImageUrl="https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_242371765-1-1.jpg"},
-        new Campsite {Id = 6, CampsiteTypeId = 6, Nickname = "HangingLights", ImageUrl="http://unique-weird.weebly.com/uploads/9/3/9/5/9395176/521308189.jpg"},
         });
 
         modelBuilder.Entity<UserProfile>().HasData(new UserProfile[]
         {
-            new UserProfile {Id = 1, FirstName = "Marco", LastName = "Lorenzo", Email = "MLorenzo@gmail.com", }
+            new UserProfile {Id = 1, FirstName = "Marco", LastName = "Lorenzo", Email = "MLorenzo@gmail.com"},
         });
 
         modelBuilder.Entity<Reservation>().HasData(new Reservation[]
