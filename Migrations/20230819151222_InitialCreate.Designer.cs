@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CreekRiver.Migrations
 {
     [DbContext(typeof(CreekRiverDbContext))]
-    [Migration("20230818221620_InitialCreate")]
+    [Migration("20230819151222_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -76,20 +76,6 @@ namespace CreekRiver.Migrations
                             CampsiteTypeId = 4,
                             ImageUrl = "https://media.blogto.com/articles/2017725-lake-superior.jpg?cmd=resize_then_crop&quality=70&w=2048&height=1365",
                             Nickname = "Solitary"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            CampsiteTypeId = 5,
-                            ImageUrl = "https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_242371765-1-1.jpg",
-                            Nickname = "Chillwind"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            CampsiteTypeId = 6,
-                            ImageUrl = "http://unique-weird.weebly.com/uploads/9/3/9/5/9395176/521308189.jpg",
-                            Nickname = "HangingLights"
                         });
                 });
 
