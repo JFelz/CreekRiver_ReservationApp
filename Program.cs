@@ -50,5 +50,20 @@ app.MapPost("/api/campsites", (CreekRiverDbContext db, Campsite campsite) =>
     return Results.Created($"/api/campsites/{campsite.Id}", campsite);
 });
 
+app.MapDelete("/api/campsites/{id}", (CreekRiverDbContext db, int id) =>
+{
+    Campsite campsite = db.Campsites.SingleOrDefault(campsite => campsite.Id == id);
+    //Return a response if it cannot be found.
+    if (campsite == null)
+    {
+        return Results.NotFound();
+    }
+    //Remove from the database
+    db.Campsites.Remove(campsite);
+    //Save changes to the database
+    db.SaveChanges();
+    return Results.NoContent();
+});
+
 app.Run();
 
